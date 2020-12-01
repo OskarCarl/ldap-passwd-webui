@@ -53,6 +53,9 @@ def post_index():
 def serve_static(filename):
     return static_file(filename, root=path.join(BASE_DIR, 'static'))
 
+@route('/favicon.ico')
+def serve_favicon():
+    return static_file('favicon.ico', root=path.join(BASE_DIR, 'static'))
 
 def index_tpl(**kwargs):
     return template('index', **kwargs)
