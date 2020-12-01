@@ -16,7 +16,7 @@
       <h1>{{ page_title }}</h1>
 
       <form action="/" method="get">
-        Change Request sent!
+        <h2>Change Request sent!</h2>
         <button type="submit">Return to main page</button>
       </form>
 
